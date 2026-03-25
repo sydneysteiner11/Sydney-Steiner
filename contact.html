@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/vuy5pia.css">
+    <title>Document</title>
+     <link rel="stylesheet" href="main.css">
+     <link rel="stylesheet" href="normalize.css">
+     <link rel="stylesheet" href="https://use.typekit.net/cha1lrw.css">
+    <style>
+      .container form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        max-width: 500px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      input, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+        font-family: "brown-pro", sans-serif;
+      }
+      textarea {
+        resize: vertical;
+        min-height: 100px;
+      }
+      button {
+        background-color: rosybrown;
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        font-family: "brown-pro", sans-serif;
+        transition: opacity 0.3s;
+      }
+      button:hover {
+        opacity: 0.8;
+      }
+    </style>
+</head>
+ <header>
+    <body> 
+  <a href="index.html">
+  <img src="Images/angelface logo.png" alt="AngelFace" width="200">
+</a>
+ <nav>
+       <a href="index.html">HOME</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="portfolio.html">PORTFOLIO</a>
+        <div class="dropdown">
+          <button class="dropbtn" type="button">MORE+</button>
+          <div class="dropdown-content">
+            <a href="angelface.html">Angelface</a>
+            <a href="graphics.html">Graphics</a>
+            <a href="Illustrations.html">Illustration</a>
+            <a href="other.html">Other</a>
+          </div>
+        </div>
+ </nav>
+    </header>
+<main>
+    <h1> ABOUT THE DESIGNER</h1>
+    <section style="display: flex; flex-wrap: wrap; align-items: flex-start; text-align: left; gap: 2rem;">
+      <div style="flex: 1 1 50%; max-width: 50%;">
+        <h2>SYDNEY STEINER</h2>
+        <p>
+           Sydney Steiner is a Graphic Designer based in Minneapolis, Minnesota. In addition to her work in graphic design, she also have a strong passion for photography, film and illustration. With a strong background in Adobe Creative Cloud software, she provides a versatile and detail oriented outlook to her creative work. From forming compelling visual identities to the creation of engaging print and digital compositions, Sydney guides her designs to best communicate the clients vision. 
+        </p>
+        <h2>MISSION</h2>
+            <p>
+       Art that combines a touch of vintage and a glismpe towards the future. My work explores a feminine outlook while intergrating sterile and disarranged content to provoke a dialogue between fragility and emotional chaos. There is a quiet tension within my work, one created from built up beauty and disruption. Visual story telling is a key component, where layering imagery and contrasting elements build narratives that blur the line between past and futuristic content.</p>
+      </div>
+      <div style="flex: 1 1 45%; max-width: 45%; text-align: right;">
+        <img src="Images/CA621562-974C-4AA8-AB64-A7F52036AC32 2.png" alt="Sydney Steiner" style="width:500px; height: auto;">
+      </div>
+    </section>
+
+   
+  <h1>CONTACT ME</h1>
+  <p style="text-align: center; margin: 1rem auto; max-width: 500px;">Stay in contact, ask questions, or just say hi! I am always open to new opportunities and collaborations. Looking forward to hearing from you!</p>
+ <div class="container">
+  <form>
+    <input type="text" placeholder="Enter your name"><br>
+    <input type="email" placeholder="Enter your email"><br>
+
+    <textarea placeholder="Enter your message" rows="4" cols="50"></textarea><br>
+    
+ <button type="submit">Send Message</button>
+
+  </form>
+</div>
+</section>
+    
+
+ <footer>
+    <p>Copyright @2026 Sydney Steiner</p>
+    <class="fixed-footer">
+   <a href="https://www.instagram.com/angelface.000" target="_blank">
+  <img src="Images/Instagram_logo_2016.png" alt="Instagram" width="50">
+</a>
+   <a href="https://www.linkedin.com/in/sydney-steiner-b88071347/" target="_blank">
+  <img src="Images/1696901179396.png" alt="LinkedIn" width="50">
+</a>
+      <a href="mailto:sydneysteiner24@gmail.com">
+  <img src="Images/mini-hero-mail.png" alt="Email Me" width="50">
+</a>
+
+
+ </footer>
+ <script>
+   document.addEventListener('click', function(event) {
+     var button = document.querySelector('.dropbtn');
+     var dropdown = document.querySelector('.dropdown-content');
+     if (!button || !dropdown) return;
+
+     if (button.contains(event.target)) {
+       dropdown.classList.toggle('show');
+     } else if (!dropdown.contains(event.target)) {
+       dropdown.classList.remove('show');
+     }
+   });
+ </script>
+</html>

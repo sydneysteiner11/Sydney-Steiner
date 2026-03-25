@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+      body {
+        font-family: Arial;
+        margin: 0;
+        padding: 20px;
+      }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      flex: 1 1 calc(50% - 20px); /* 2 per row */
+      background: #f4f4f4;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    /* fit other page images in flexbox while keeping full proportions */
+    .column img {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      max-height: 450px;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
+    }
+
+    h1 {
+      width: 100%;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <a href="index.html"><img src="Images/angelface logo.png" alt="AngelFace" width="200"></a>
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="portfolio.html">PORTFOLIO</a>
+    <div class="dropdown">
+      <button class="dropbtn" type="button">MORE+</button>
+      <div class="dropdown-content">
+        <a href="angelface.html">Angelface</a>
+        <a href="graphics.html">Graphics</a>
+        <a href="Illustrations.html">Illustration</a>
+        <a href="other.html">Other</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+ <h1 id="other"> OTHER</h1>
+      <div class="container">
+ i     <div class="column">
+    <h2> Human Machine- Abstract Self Portrait (Feb. 2026) </h2>
+    <img src="Images/screenprint3.png" alt="Human Machine Abstract Self Portrait 01" width="100%">
+    <img src="Images/Untitled-2.png" alt="Human Machine Abstract Self Portrait 02" width="100%">
+     <p> Screen Print </p>
+      </div>
+       <div class="column">
+     <h2> Water Lilly World (Feb. 2026) </h2>
+        <img src="Images/Untitled-6.png" alt="Water Lilly World 01" width="100%">
+        <img src="Images/Untitled-7.png" alt="Water Lilly World 02" width="100%">
+        <p> Screen Print </p>
+  
+   
+      </div>
+    </div>
+
+<script>
+  document.addEventListener('click', function(event) {
+    var button = document.querySelector('.dropbtn');
+    var dropdown = document.querySelector('.dropdown-content');
+    if (!button || !dropdown) return;
+
+    if (button.contains(event.target)) {
+      dropdown.classList.toggle('show');
+    } else if (!dropdown.contains(event.target)) {
+      dropdown.classList.remove('show');
+    }
+  });
+</script>
+
+</body>
+</html>

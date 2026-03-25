@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angelface</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+      body {
+        font-family: Arial;
+        margin: 0;
+        padding: 20px;
+      }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      flex: 1 1 calc(50% - 20px); /* 2 per row */
+      background: #f4f4f4;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    h1 {
+      width: 100%;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <a href="index.html"><img src="Images/angelface logo.png" alt="AngelFace" width="200"></a>
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="portfolio.html">PORTFOLIO</a>
+    <div class="dropdown">
+      <button class="dropbtn" type="button">MORE+</button>
+      <div class="dropdown-content">
+        <a href="angelface.html">Angelface</a>
+        <a href="graphics.html">Graphics</a>
+        <a href="Illustrations.html">Illustration</a>
+        <a href="other.html">Other</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<h1>ANGELFACE</h1>
+
+ <div class="column">
+  <h2>Dance Dance Dance: Stopmotion (Feb.2026)</h2>
+
+
+<div class="item"> 
+    <video width="625" autoplay muted loop>
+        
+<source src="Images/ps-stopmotion.mp4" type="video/mp4">
+</video>
+    </div>
+
+   
+      </div>
+  <meta charset="UTF-8">
+  <title>Flexbox Columns</title>
+  <style>
+    
+    .container {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .column {
+      flex: 1;
+      border: 1px solid #ccc;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .column img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+
+<div class="container">
+  
+  <div class="column">
+    <h2>The Dinner Table: Version One (Jan. 2026)</h2>
+    <img src="Images/hh.png" alt="By Number: Version One" width="300">
+    <p>This is the first column. It contains a title, an image, and a paragraph of text.</p>
+  </div>
+
+  <div class="column">
+    <h2>The Dinner Table: Version Two (Jan. 2026)</h2>
+    <img src="Images/IMG_1770 [Recovered].png" alt="By Number: Version Two" width="300">
+    <p>This is the second column. It also includes a title, an image, and some descriptive text.</p>
+  </div>
+
+</div>
+
+<div class="container">
+  
+  <div class="column">
+    
+    <h2>ABC Limb Font (Dec. 2025)</h2>
+    <img src="Images/abc limb 2.png" alt="ABC Limb Font" width="300">
+    
+
+ <div class="column">
+    <h2>My Life as a Paper Doll (Dec. 2025)</h2>
+    <img src="Images/FE5606B6-3A03-4D94-8B85-6CFA952742C5.png" alt="ABC Limb Font Examplar" width="300">
+    
+  </div>
+
+</div>
+  
+
+</body>
+</html>
+
+<script>
+  document.addEventListener('click', function(event) {
+    var button = document.querySelector('.dropbtn');
+    var dropdown = document.querySelector('.dropdown-content');
+    if (!button || !dropdown) return;
+
+    if (button.contains(event.target)) {
+      dropdown.classList.toggle('show');
+    } else if (!dropdown.contains(event.target)) {
+      dropdown.classList.remove('show');
+    }
+  });
+</script>
+
+</body>
+</html>

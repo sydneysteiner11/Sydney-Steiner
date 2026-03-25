@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+     <link rel="stylesheet" href="normalize.css">
+   <link rel="stylesheet" href="https://use.typekit.net/cha1lrw.css">
+  <style>
+    /* Center main content */
+
+    
+    main img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    h1 {
+      width: 100%;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+    <header>
+    <img src="Images/angelface logo.png" alt="AngelFace" width="200">
+ <nav>
+     <a href="index.html">HOME</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="portfolio.html">PORTFOLIO</a>
+        <div class="dropdown">
+          <button class="dropbtn" type="button">MORE+</button>
+          <div class="dropdown-content">
+            <a href="angelface.html">Angelface</a>
+            <a href="graphics.html">Graphics</a>
+            <a href="Illustrations.html">Illustration</a>
+            <a href="other.html">Other</a>
+          </div>
+        </div>
+ </nav>
+    </header>
+
+    <main>
+      <h1> SYDNEY STEINER</h1>
+      <h2> GRAPHIC DESIGNER BASED IN MINNEAPOLIS, MN </h2>
+      <p> Designing for your world & ours. Designs entail a touch of vintage and a glimpse towards the future. The eyes to the world above. </p>
+
+        <img src="Images/dancers.png" alt="angelface" width="400"> 
+       
+      
+
+    </main>
+
+ <footer>
+    <p>Copyright @2026 Sydney Steiner</p>
+    <class="fixed-footer">
+   <a href="https://www.instagram.com/angelface.000" target="_blank">
+  <img src="Images/Instagram_logo_2016.png" alt="Instagram" width="50">
+</a>
+   <a href="https://www.linkedin.com/in/sydney-steiner-b88071347/" target="_blank">
+  <img src="Images/1696901179396.png" alt="LinkedIn" width="50">
+</a>
+      <a href="mailto:sydneysteiner24@gmail.com">
+  <img src="Images/mini-hero-mail.png" alt="Email Me" width="50">
+</a>
+
+
+ </footer>
+    
+ <script>
+   document.addEventListener('click', function(event) {
+     var button = document.querySelector('.dropbtn');
+     var dropdown = document.querySelector('.dropdown-content');
+     if (!button || !dropdown) return;
+
+     if (button.contains(event.target)) {
+       dropdown.classList.toggle('show');
+     } else if (!dropdown.contains(event.target)) {
+       dropdown.classList.remove('show');
+     }
+   });
+ </script>
+</body>
+</html>

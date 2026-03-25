@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://use.typekit.net/cha1lrw.css">
+   
+    <title>Document</title>
+     <link rel="stylesheet" href="main.css">
+     <link rel="stylesheet" href="normalize.css">
+    <style>
+      .hover-zoom { transition: transform .35s ease, box-shadow .35s ease; will-change: transform; }
+      .hover-zoom:hover { transform: scale(1.03); box-shadow: 0 18px 40px rgba(0,0,0,0.25); }
+      h1 {
+        width: 100%;
+        margin: 0 0 2rem 0;
+      }
+    </style>
+</head>
+ <header>
+    <body>
+  <a href="index.html">
+  <img src="Images/angelface logo.png" alt="AngelFace" width="200">
+</a>
+   <nav>
+         <a href="index.html">HOME</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="portfolio.html">PORTFOLIO</a>
+        <div class="dropdown">
+          <button class="dropbtn" type="button">MORE+</button>
+          <div class="dropdown-content">
+            <a href="angelface.html">Angelface</a>
+            <a href="graphics.html">Graphics</a>
+            <a href="Illustrations.html">Illustration</a>
+            <a href="other.html">Other</a>
+          </div>
+        </div>
+   </nav>
+    </header>
+    
+<main>
+    <h1> WIMBLEDON GRAPHIC</h1>
+    <div style="text-align:center;">
+      <a href="portfolio-details.html">
+        <img class="hover-zoom" src="Images/doubles.png" alt="Tennis Doubles" style="max-width:100%;width:800px;display:block;margin:0 auto;cursor:pointer;">
+      </a>
+    </div>
+    
+</main>
+<main>
+    <h1> BLUE VELVET MOVIE TITLE CARDS</h1>
+    <img src="Images/bluevelvet.png" alt="Blue Velvet Title Cards" width="100%">
+ 
+</main>
+<main>
+    <h1> COCTEAU TWINS ALBUM REDESIGN</h1>
+     <h2>Record Cover</h2>
+     <img src="Images/albumcover.png" alt="Record Cover" width="100%">
+     <h2> Record Sleeve </h2>
+      <img src="Images/albumjacket.png" alt="Record Cover" width="100%">
+      <h2>Record Label</h2>
+   <img src="Images/label1.png" alt="Spinning record" width="625%"class="spin">
+    <img src="Images/label2.png" alt="Spinning record" width="625"class="spin">
+   
+</main>
+   
+ <footer>
+    <p>Copyright @2026 Sydney Steiner</p>
+    <class="fixed-footer">
+   <a href="https://www.instagram.com/angelface.000" target="_blank">
+  <img src="Images/Instagram_logo_2016.png" alt="Instagram" width="50">
+</a>
+   <a href="https://www.linkedin.com/in/sydney-steiner-b88071347/" target="_blank">
+  <img src="Images/1696901179396.png" alt="LinkedIn" width="50">
+</a>
+      <a href="mailto:sydneysteiner24@gmail.com">
+  <img src="Images/mini-hero-mail.png" alt="Email Me" width="50">
+</a>
+ <script>
+   document.addEventListener('click', function(event) {
+     var button = document.querySelector('.dropbtn');
+     var dropdown = document.querySelector('.dropdown-content');
+     if (!button || !dropdown) return;
+
+     if (button.contains(event.target)) {
+       dropdown.classList.toggle('show');
+     } else if (!dropdown.contains(event.target)) {
+       dropdown.classList.remove('show');
+     }
+   });
+ </script>
+ </footer>
+</body>
+</html>

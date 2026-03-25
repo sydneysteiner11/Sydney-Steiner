@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Illustration</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+      body {
+        font-family: Arial;
+        margin: 0;
+        padding: 20px;
+      }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      flex: 1 1 calc(50% - 20px); /* 2 per row */
+      background: #f4f4f4;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    /* fit illustration images in flexbox while keeping full proportions */
+    .column img {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      max-height: 450px;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
+    }
+
+    h1 {
+      width: 100%;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <a href="index.html"><img src="Images/angelface logo.png" alt="AngelFace" width="200"></a>
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="portfolio.html">PORTFOLIO</a>
+    <div class="dropdown">
+      <button class="dropbtn" type="button">MORE+</button>
+      <div class="dropdown-content">
+        <a href="angelface.html">Angelface</a>
+        <a href="graphics.html">Graphics</a>
+        <a href="Illustrations.html">Illustration</a>
+        <a href="other.html">Other</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<h1 id="illustration">ILLUSTRATION</h1>
+
+
+
+<div class="container">
+  <div class="column">
+    <h2>Untitled (Feb.2026)</h2>
+    <img src="Images/IMG_0638.JPG" alt="Untitled">
+   
+  </div>
+
+  <div class="column">
+    <h2>Oh Feather Woman Sticker Pack (Jan.2026)</h2>
+    <img src="Images/oh feather woman.png" alt="Oh Feather Woman">
+
+  </div>
+</div>
+
+  <div class="container">
+  <div class="column">
+    <h2>A Loyal Guide to the Underworld (Jan.2026)</h2>
+    <img src="Images/IMG_86427E6B1872-1.jpeg" alt="Crow Illustration">
+    <p>Crows know what it means to die. They mourn and find the cause of a fellow members death. If a crow kills a crow the one who killed will be sentenced to the death penalty. They will bring you a feather or shiny object as a token of favor. The crow will remember your face and share youyr image with fellow crows. </p>
+  </div>
+    <div class="column">
+  <h2>Valentine Day Card (Feb.2026)</h2>
+    <img src="Images/2D57EBB1-154C-4926-98EC-A02DF26B103E.png" alt="Valentines Day Card">
+  </div>
+</div>
+
+
+    
+  
+   
+      </div>
+    </div>
+  </main>
+
+<script>
+  document.addEventListener('click', function(event) {
+    var button = document.querySelector('.dropbtn');
+    var dropdown = document.querySelector('.dropdown-content');
+    if (!button || !dropdown) return;
+
+    if (button.contains(event.target)) {
+      dropdown.classList.toggle('show');
+    } else if (!dropdown.contains(event.target)) {
+      dropdown.classList.remove('show');
+    }
+  });
+</script>
+
+</body>
+</html>
